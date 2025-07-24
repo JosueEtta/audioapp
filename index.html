@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="play.js" defer></script>
+    <title>Video viewer</title>
+</head>
+
+<body>
+    <div class="audio-img">
+
+    </div>
+    <div class="audio-container">
+        <audio id="audioPlayer">
+            <source src="assets/Call_of_the_Night_Season_2_-_Opening_FULL__Mirage__by_Creepy_Nuts__Lyrics_(256k).mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="controls">
+        <div class="timer">
+            <span id="currentTime">00:00</span> /
+            <span id="duration">00:00</span>
+        </div>
+        <input type="range" min="0" max="100" value="50" id="volumeControl">
+        <div id="control-img">
+            <i class="fa-solid fa-backward-step" id="rewindBtn"></i>
+            <i class="fa-solid fa-pause" id="playBtn" alt="Play" onclick="playOrStopMusic()"></i>
+            <i class="fa-solid fa-play" id="PauseBtn" alt="Pause" onclick="playOrStopMusic()"style="display:none"></i>
+            <i class="fa-solid fa-forward-step" id="forwardBtn"></i>
+        </div>
+    </div>
+
+</body>
+
+</html>
