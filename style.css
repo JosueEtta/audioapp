@@ -12,7 +12,7 @@ body {
     justify-content: flex-end;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     font-family: 'Segoe UI', 'Arial', sans-serif;
-    background-image: url("assets/1000068601.jpg");
+    background-image: url("assets/images/1000068601.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body {
     display: block;
     box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.17);
     transition: box-shadow 0.2s;
-    background-image: url("assets/1000068601.jpg");
+    background-image: url("assets/images/1000068601.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

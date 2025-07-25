@@ -16,7 +16,7 @@
     </div>
     <div class="audio-container">
         <audio id="audioPlayer">
-            <source src="assets/Call_of_the_Night_Season_2_-_Opening_FULL__Mirage__by_Creepy_Nuts__Lyrics_(256k).mp3">
+            <source src="assets/songs/Call_of_the_Night_Season_2_-_Opening_FULL__Mirage__by_Creepy_Nuts__Lyrics_(256k).mp3">
             Your browser does not support the audio element.
         </audio>
     </div>
@@ -28,10 +28,10 @@
         </div>
         <input type="range" min="0" max="100" value="50" id="volumeControl">
         <div id="control-img">
-            <i class="fa-solid fa-backward-step" id="rewindBtn"></i>
-            <i class="fa-solid fa-pause" id="playBtn" alt="Play" onclick="playOrStopMusic()"></i>
-            <i class="fa-solid fa-play" id="pauseBtn" alt="Pause" onclick="playOrStopMusic()"style="display:none"></i>
-            <i class="fa-solid fa-forward-step" id="forwardBtn"></i>
+            <img id="rewindBtn" src="./assets/images/backward-step-solid-full.svg" alt="Rewind" width="48" onclick="playOrStopMusic()">
+            <img id="playBtn" src="./assets/images/play-solid-full.svg" alt="Play" width="48" onclick="playOrStopMusic()">
+            <img id="pauseBtn" src="./assets/images/pause-solid-full.svg" alt="Pause" width="48" onclick="playOrStopMusic()" style="display:none">
+            <img id="forwardBtn" src="./assets/images/forward-step-solid-full.svg" alt="Forward" width="48">
         </div>
     </div>
 
