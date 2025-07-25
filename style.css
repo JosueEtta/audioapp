@@ -39,6 +39,23 @@ body {
     animation: rotate 20s linear infinite;
     animation-fill-mode: forwards;
 }
+.options {
+      cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 50%;
+    padding: 12px 0;
+    gap: 16px;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 24px;
+}
+#heart:focus,
+.options i:hover{
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #fa0a52;
+}
 .controls {
     margin: auto;
     margin-bottom: 70px;
@@ -80,7 +97,7 @@ body {
     margin: 0;
 }
 
-#control-img i {
+#control-img img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +117,13 @@ body {
     .audio-img {
         max-width: 98vw;
         border-radius: 250px;
+        margin-top: 10px;
         margin-bottom: 12px;
+    }
+    .options{
+          width: 98%;
+          margin-top: 24px;
+          margin-bottom: 10px;
     }
 
     .controls {

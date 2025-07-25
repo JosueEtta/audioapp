@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <script src="play.js" defer></script>
     <title>Video viewer</title>
 </head>
@@ -16,9 +16,22 @@
     </div>
     <div class="audio-container">
         <audio id="audioPlayer">
-            <source src="assets/songs/Call_of_the_Night_Season_2_-_Opening_FULL__Mirage__by_Creepy_Nuts__Lyrics_(256k).mp3">
+            <source
+                src="assets/songs/Call_of_the_Night_Season_2_-_Opening_FULL__Mirage__by_Creepy_Nuts__Lyrics_(256k).mp3">
             Your browser does not support the audio element.
         </audio>
+    </div>
+
+    <div class="options">
+          <!-- <img src="./assets/images/heart-regular-full.svg" id="heart" alt="Heart" width="32">
+        <img src="./assets/images/repeat-solid-full.svg" alt="many option" width="32">
+        <img src="./assets/images/plus-solid-full.svg" alt="Plus" width="32">
+        <img src="./assets/images/list-solid-full.svg" alt="List" width="32">-->
+        <i class="fa-solid fa-heart" id="heart" style="font-size:32px;"></i>
+        <i class="fa-solid fa-repeat" style="font-size:32px;"></i>
+        <i class="fa-solid fa-plus" style="font-size:32px;"></i>
+        <i class="fa-solid fa-list" style="font-size:32px;"></i>
+
     </div>
 
     <div class="controls">
@@ -28,9 +41,12 @@
         </div>
         <input type="range" min="0" max="100" value="50" id="volumeControl">
         <div id="control-img">
-            <img id="rewindBtn" src="./assets/images/backward-step-solid-full.svg" alt="Rewind" width="48" onclick="playOrStopMusic()">
-            <img id="playBtn" src="./assets/images/play-solid-full.svg" alt="Play" width="48" onclick="playOrStopMusic()">
-            <img id="pauseBtn" src="./assets/images/pause-solid-full.svg" alt="Pause" width="48" onclick="playOrStopMusic()" style="display:none">
+            <img id="rewindBtn" src="./assets/images/backward-step-solid-full.svg" alt="Rewind" width="48"
+                onclick="playOrStopMusic()">
+            <img id="playBtn" src="./assets/images/play-solid-full.svg" style="display:none;" alt="Play" width="48"
+                onclick="playOrStopMusic()">
+            <img id="pauseBtn" src="./assets/images/pause-solid-full.svg" style="display: flex;" st alt="Pause"
+                width="48" onclick="playOrStopMusic()" style="display:none">
             <img id="forwardBtn" src="./assets/images/forward-step-solid-full.svg" alt="Forward" width="48">
         </div>
     </div>
