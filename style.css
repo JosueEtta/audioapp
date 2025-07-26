@@ -114,20 +114,43 @@ body {
 }
 
 @media (max-width: 600px) {
-    .audio-img {
-        max-width: 98vw;
-        border-radius: 250px;
-        margin-top: 10px;
-        margin-bottom: 12px;
+    #audio-img {
+        width: 200px;
+        height: 200px;
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 50%;
+        margin: 100px auto 8px auto;
     }
-    .options{
-          width: 98%;
-          margin-top: 24px;
-          margin-bottom: 10px;
+    .options {
+        width: 96vw;
+        margin-top: 90px;
+        margin-bottom: 8px;
     }
-
+    .options i {
+        font-size: 20px !important;
+    }
     .controls {
-        width: 98vw;
-        padding: 16px 4vw;
+        width: 96vw;
+        max-width: 96vw;
+        padding: 10px 2vw 16px 2vw;
+        margin-bottom: 100px;
     }
+    .timer {
+        font-size: 0.9rem;
+        padding: 4px 10px;
+    }
+    #control-img img {
+        width: 32px;
+        height: 32px;
+        font-size: 32px;
+        padding: 4px;
+    }
+    #control-img i {
+        font-size: 32px;
+        width: 32px;
+        height: 32px;
+        padding: 4px;
+    }
+    /* #volumeControl remains unchanged for mobile */
 }
