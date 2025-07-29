@@ -1,9 +1,12 @@
 const music = document.getElementById("audioPlayer");
-const playPauseButton = document.getElementById("playPauseButton");
 const playBtn = document.getElementById("playBtn");
 const pauseBtn = document.getElementById("pauseBtn");
 const audioImg = document.getElementById("audio-img");
-const options = document.querySelectorAll(".options img");
+const heart = document.getElementById("heart");
+
+heart.addEventListener("click",()=>{
+  (heart.style.color === "black") ?  heart.style.color = "#fa0a52" : heart.style.color = "black"
+});
 
 function playOrStopMusic() {
   let playState = music.paused ? "play" : "pause";
