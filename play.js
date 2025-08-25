@@ -3,9 +3,11 @@ const playBtn = document.getElementById("playBtn");
 const pauseBtn = document.getElementById("pauseBtn");
 const audioImg = document.getElementById("audio-img");
 const heart = document.getElementById("heart");
+const list =  document.getElementById("list");
+const musicList = document.getElementById("music-list");
 
 heart.addEventListener("click",()=>{
-  (heart.style.color === "black") ?  heart.style.color = "#fa0a52" : heart.style.color = "black"
+  (heart.style.color === "black") ?  heart.style.color = "#fa0a52" : heart.style.color = "black" ;
 });
 
 function playOrStopMusic() {
@@ -22,3 +24,7 @@ function playOrStopMusic() {
     music.pause();
   }
 }
+
+list.addEventListener("click",()=>{
+    (musicList.style.display === "none") ? musicList.style.display = "block" :  musicList.style.display = "none" ;
+});
