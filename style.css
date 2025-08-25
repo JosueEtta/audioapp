@@ -183,15 +183,19 @@ body {
     flex-direction: row;
     width: inherit;
 }
+
 #list-option .tab{
     text-align: center;
-    font-size:20px;
+    font-size: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    width:50%;
+    flex: 1;  /* Changed from width: 50% to flex: 1 for equal distribution */
     border-bottom: solid;
     border-color: #fa0a52;
     cursor: pointer;
+    /* Add these for better flex behavior */
+    min-width: 0;
+    box-sizing: border-box;
 }
 #music-list i{
     font-size: xx-large;

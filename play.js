@@ -26,5 +26,14 @@ function playOrStopMusic() {
 }
 
 list.addEventListener("click",()=>{
-    (musicList.style.display === "none") ? musicList.style.display = "block" :  musicList.style.display = "none" ;
+    if(musicList.style.display === "none"){
+      musicList.style.display = "block";
+      musicList.classList.toggle=("slideLeft");
+      musicList.classList.toggle=("slideRight");  
+    } 
+      else{  
+        musicList.classList.toggle=("slideLeft");
+        musicList.classList.toggle=("slideRight");  
+         musicList.style.display = "none";
+      }
 });
